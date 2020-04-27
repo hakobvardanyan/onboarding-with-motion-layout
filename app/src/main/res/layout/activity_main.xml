@@ -7,14 +7,54 @@
     app:layoutDescription="@xml/activity_main_scene"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/background_green_light_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/starsViewTop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_stars"
+        app:layout_constraintBottom_toTopOf="@+id/backgroundView"
+        app:layout_constraintStart_toStartOf="@+id/backgroundView"
+        app:layout_constraintTop_toTopOf="@+id/backgroundView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/starsViewStart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_stars"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toStartOf="@+id/backgroundView"
+        app:layout_constraintStart_toStartOf="@+id/backgroundView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/starsViewEnd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_stars"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundView"
+        app:layout_constraintStart_toEndOf="@+id/backgroundView"
+        app:layout_constraintTop_toTopOf="@+id/backgroundView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/phoneView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_smartphone"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundView"
+        app:layout_constraintStart_toStartOf="@+id/backgroundView"
+        app:layout_constraintTop_toTopOf="@+id/backgroundView" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

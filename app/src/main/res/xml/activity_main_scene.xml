@@ -2,50 +2,171 @@
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
-    <Transition
-        motion:constraintSetEnd="@+id/middle"
-        motion:constraintSetStart="@id/start"
-        motion:duration="1000">
-        <OnSwipe
-            motion:dragDirection="dragLeft"
-            motion:touchAnchorSide="left" />
-    </Transition>
-
     <ConstraintSet android:id="@+id/start">
         <Constraint
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/backgroundView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent" />
-    </ConstraintSet>
-
-    <ConstraintSet android:id="@+id/middle">
         <Constraint
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:id="@+id/starsViewTop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            motion:layout_constraintBottom_toTopOf="@+id/backgroundView"
+            motion:layout_constraintStart_toStartOf="@+id/backgroundView"
+            motion:layout_constraintTop_toTopOf="@+id/backgroundView" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/left">
+        <Constraint
+            android:id="@+id/backgroundView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/starsViewTop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="40dp"
+            motion:layout_constraintBottom_toTopOf="@+id/backgroundView"
+            motion:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/starsViewStart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/backgroundView" />
+        <Constraint
+            android:id="@+id/phoneView"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintLeft_toLeftOf="parent"
-            motion:layout_constraintRight_toRightOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.35" />
     </ConstraintSet>
-
-    <ConstraintSet android:id="@+id/end">
+    <ConstraintSet android:id="@+id/right">
         <Constraint
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:id="@+id/backgroundView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/starsViewTop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="40dp"
+            motion:layout_constraintBottom_toTopOf="@+id/backgroundView"
+            motion:layout_constraintStart_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/starsViewStart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/backgroundView" />
+        <Constraint
+            android:id="@+id/phoneView"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            motion:layout_constraintLeft_toLeftOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.35" />
     </ConstraintSet>
     <Transition
-        motion:constraintSetEnd="@+id/end"
-        motion:constraintSetStart="@+id/middle" >
+        android:id="@+id/toLeft"
+        motion:constraintSetEnd="@+id/left"
+        motion:constraintSetStart="@+id/start">
         <OnSwipe
             motion:dragDirection="dragLeft"
             motion:touchAnchorSide="left" />
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                android:rotation="90"
+                android:scaleX="0.2"
+                android:scaleY="0.2"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/backgroundView" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.1"
+                android:scaleY="0.1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/starsViewTop" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.1"
+                android:scaleY="0.1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/starsViewStart" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.1"
+                android:scaleY="0.1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/starsViewEnd" />
+            <KeyAttribute
+                android:alpha="0"
+                android:rotation="360"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/phoneView" />
+        </KeyFrameSet>
+    </Transition>
+    <Transition
+        android:id="@+id/toRight"
+        motion:constraintSetEnd="@+id/right"
+        motion:constraintSetStart="@+id/start">
+        <OnSwipe
+            motion:dragDirection="dragRight"
+            motion:touchAnchorSide="right" />
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                android:rotation="90"
+                android:scaleX="0.2"
+                android:scaleY="0.2"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/backgroundView" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.1"
+                android:scaleY="0.1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/starsViewTop" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.1"
+                android:scaleY="0.1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/starsViewStart" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.1"
+                android:scaleY="0.1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/starsViewEnd" />
+            <KeyAttribute
+                motion:motionTarget="@+id/phoneView"
+                motion:framePosition="100"
+                android:scaleX="0.2"
+                android:scaleY="0.2"
+                android:rotation="360"
+                android:alpha="0" />
+        </KeyFrameSet>
     </Transition>
 </MotionScene>
