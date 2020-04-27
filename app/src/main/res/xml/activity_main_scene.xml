@@ -52,6 +52,14 @@
             motion:layout_constraintEnd_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.35" />
+        <Constraint
+            android:id="@+id/titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/backgroundView"
+            motion:layout_constraintVertical_bias="0.7" />
     </ConstraintSet>
     <ConstraintSet android:id="@+id/right">
         <Constraint
@@ -84,6 +92,14 @@
             motion:layout_constraintStart_toEndOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.35" />
+        <Constraint
+            android:id="@+id/titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/backgroundView"
+            motion:layout_constraintVertical_bias="0.7"
+            motion:layout_constraintStart_toEndOf="parent" />
     </ConstraintSet>
     <Transition
         android:id="@+id/toLeft"
@@ -125,6 +141,12 @@
                 android:scaleY="0.3"
                 motion:framePosition="100"
                 motion:motionTarget="@+id/phoneView" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/titleView" />
         </KeyFrameSet>
     </Transition>
     <Transition
@@ -161,12 +183,18 @@
                 motion:framePosition="100"
                 motion:motionTarget="@+id/starsViewEnd" />
             <KeyAttribute
-                motion:motionTarget="@+id/phoneView"
-                motion:framePosition="100"
+                android:alpha="0"
+                android:rotation="360"
                 android:scaleX="0.2"
                 android:scaleY="0.2"
-                android:rotation="360"
-                android:alpha="0" />
+                motion:framePosition="100"
+                motion:motionTarget="@+id/phoneView" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/titleView" />
         </KeyFrameSet>
     </Transition>
 </MotionScene>
