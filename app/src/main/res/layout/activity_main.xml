@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <View
-        android:id="@+id/backgroundView"
+        android:id="@+id/backgroundViewFirst"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/background_green_light_rounded"
@@ -23,9 +23,9 @@
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:src="@drawable/ic_stars"
-        app:layout_constraintBottom_toTopOf="@+id/backgroundView"
-        app:layout_constraintStart_toStartOf="@+id/backgroundView"
-        app:layout_constraintTop_toTopOf="@+id/backgroundView" />
+        app:layout_constraintBottom_toTopOf="@+id/backgroundViewFirst"
+        app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
+        app:layout_constraintTop_toTopOf="@+id/backgroundViewFirst" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/starsViewStart"
@@ -33,29 +33,29 @@
         android:layout_height="40dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/ic_stars"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
-        app:layout_constraintEnd_toStartOf="@+id/backgroundView"
-        app:layout_constraintStart_toStartOf="@+id/backgroundView" />
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
+        app:layout_constraintEnd_toStartOf="@+id/backgroundViewFirst"
+        app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/starsViewEnd"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/ic_stars"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
-        app:layout_constraintEnd_toEndOf="@+id/backgroundView"
-        app:layout_constraintStart_toEndOf="@+id/backgroundView"
-        app:layout_constraintTop_toTopOf="@+id/backgroundView" />
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
+        app:layout_constraintStart_toEndOf="@+id/backgroundViewFirst"
+        app:layout_constraintTop_toTopOf="@+id/backgroundViewFirst" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/phoneView"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_smartphone"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
-        app:layout_constraintEnd_toEndOf="@+id/backgroundView"
-        app:layout_constraintStart_toStartOf="@+id/backgroundView"
-        app:layout_constraintTop_toTopOf="@+id/backgroundView" />
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
+        app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
+        app:layout_constraintTop_toTopOf="@+id/backgroundViewFirst" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/titleView"
@@ -74,7 +74,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backgroundView" />
+        app:layout_constraintTop_toBottomOf="@+id/backgroundViewFirst" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/subTitleView"
@@ -95,5 +95,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleView"
         app:layout_constraintVertical_bias="0" />
+
+    <View
+        android:id="@+id/backgroundViewSecond"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:alpha="0"
+        android:background="@drawable/background_orange_light_rounded"
+        android:rotation="90"
+        android:scaleX="0.2"
+        android:scaleY="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/heartViewStart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:alpha="0"
+        android:scaleX="0.1"
+        android:scaleY="0.1"
+        android:src="@drawable/ic_three_hearts"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/backgroundViewSecond" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/heartViewEnd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:alpha="0"
+        android:scaleX="0.1"
+        android:scaleY="0.1"
+        android:src="@drawable/ic_hearts_many"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundViewSecond" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
