@@ -135,7 +135,7 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/messagesView"
-        android:layout_width="90dp"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:alpha="0"
         android:rotation="360"
