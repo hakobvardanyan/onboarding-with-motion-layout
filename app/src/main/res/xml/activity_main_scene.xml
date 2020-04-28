@@ -7,11 +7,11 @@
             android:id="@+id/backgroundViewFirst"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            motion:layout_constraintVertical_bias="0.3"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.3" />
         <Constraint
             android:id="@+id/starsViewTop"
             android:layout_width="40dp"
@@ -75,11 +75,11 @@
             android:id="@+id/backgroundViewSecond"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            motion:layout_constraintVertical_bias="0.3"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.3" />
         <Constraint
             android:id="@+id/heartViewStart"
             android:layout_width="40dp"
@@ -95,6 +95,16 @@
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewSecond"
             motion:layout_constraintEnd_toEndOf="@+id/backgroundViewSecond"
             motion:layout_constraintStart_toEndOf="@+id/backgroundViewSecond"
+            motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond" />
+        <Constraint
+            android:id="@+id/messagesView"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintHorizontal_bias="0.2"
+            motion:layout_constraintVertical_bias="0.45"
+            motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewSecond"
+            motion:layout_constraintEnd_toEndOf="@+id/backgroundViewSecond"
+            motion:layout_constraintStart_toStartOf="@+id/backgroundViewSecond"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond" />
     </ConstraintSet>
     <Transition
@@ -168,6 +178,13 @@
                 android:scaleY="1"
                 motion:framePosition="100"
                 motion:motionTarget="@+id/heartViewEnd" />
+            <KeyAttribute
+                android:alpha="1"
+                android:rotation="0"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/messagesView" />
         </KeyFrameSet>
     </Transition>
 </MotionScene>

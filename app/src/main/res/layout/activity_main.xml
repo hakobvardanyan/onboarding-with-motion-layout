@@ -133,4 +133,17 @@
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backgroundViewSecond" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/messagesView"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:rotation="360"
+        android:scaleX="0.3"
+        android:scaleY="0.3"
+        android:src="@drawable/ic_messages"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.motion.widget.MotionLayout>
