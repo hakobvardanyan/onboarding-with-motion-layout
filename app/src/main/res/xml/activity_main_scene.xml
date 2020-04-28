@@ -7,6 +7,7 @@
             android:id="@+id/backgroundViewFirst"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            motion:layout_constraintVertical_bias="0.3"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
@@ -29,7 +30,7 @@
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintVertical_bias="0.3" />
+            motion:layout_constraintVertical_bias="0.15" />
         <Constraint
             android:id="@+id/starsViewTop"
             android:layout_width="40dp"
@@ -74,6 +75,7 @@
             android:id="@+id/backgroundViewSecond"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            motion:layout_constraintVertical_bias="0.3"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"

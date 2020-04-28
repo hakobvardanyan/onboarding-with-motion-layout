@@ -74,7 +74,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backgroundViewFirst" />
+        app:layout_constraintTop_toBottomOf="@+id/backgroundViewFirst"
+        app:layout_constraintVertical_bias="0.3" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/subTitleView"
@@ -108,7 +109,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/heartViewStart"
@@ -118,8 +119,8 @@
         android:scaleX="0.1"
         android:scaleY="0.1"
         android:src="@drawable/ic_three_hearts"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/backgroundViewSecond" />
+        app:layout_constraintBottom_toTopOf="@+id/backgroundViewSecond"
+        app:layout_constraintStart_toEndOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/heartViewEnd"
