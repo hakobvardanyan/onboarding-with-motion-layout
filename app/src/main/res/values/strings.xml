@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">OnBoarding-With-Motion-Layout</string>
-    <string name="enjoy_messaging">Enjoy messaging</string>
+    <string name="messaging_title">Enjoy messaging</string>
+    <string name="messaging_description">Quick and easy messaging with your friends</string>
 </resources>
