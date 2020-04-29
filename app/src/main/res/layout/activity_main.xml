@@ -193,4 +193,63 @@
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleViewSecond" />
 
+    <View
+        android:id="@+id/backgroundViewThird"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:alpha="0"
+        android:background="@drawable/background_orange_light_rounded"
+        android:rotation="90"
+        android:scaleX="0.2"
+        android:scaleY="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleViewThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="0"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        android:text="@string/chat_title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundViewThird"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/subTitleViewThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="0"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="3"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        android:text="@string/chat_description"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleViewThird" />
+
 </androidx.constraintlayout.motion.widget.MotionLayout>

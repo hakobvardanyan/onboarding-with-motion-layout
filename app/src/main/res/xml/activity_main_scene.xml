@@ -227,4 +227,106 @@
                 motion:motionTarget="@+id/subTitleViewSecond" />
         </KeyFrameSet>
     </Transition>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/backgroundViewSecond"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:rotation="90"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.15" />
+        <Constraint
+            android:id="@+id/heartViewEnd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            motion:layout_constraintBottom_toTopOf="@+id/backgroundViewSecond"
+            motion:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/heartViewStart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/backgroundViewSecond" />
+        <Constraint
+            android:id="@+id/messagesView"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.35" />
+        <Constraint
+            android:id="@+id/titleViewSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/backgroundViewSecond"
+            motion:layout_constraintVertical_bias="0.7" />
+        <Constraint
+            android:id="@+id/subTitleViewSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/titleViewSecond" />
+        <Constraint
+            android:id="@+id/backgroundViewThird"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/titleViewThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/backgroundViewThird"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/subTitleViewThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/titleViewThird"
+            motion:layout_constraintVertical_bias="0" />
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/toEnd"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/left">
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="1"
+                android:rotation="0"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/backgroundViewThird" />
+        </KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragLeft"
+            motion:touchAnchorSide="left" />
+    </Transition>
 </MotionScene>
