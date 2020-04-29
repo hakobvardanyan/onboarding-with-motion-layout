@@ -134,6 +134,20 @@
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/titleViewSecond"
             motion:layout_constraintVertical_bias="0" />
+        <Constraint
+            android:id="@+id/indicatorViewActiveTop"
+            android:layout_width="30dp"
+            android:layout_height="5dp"
+            motion:layout_constraintEnd_toEndOf="@+id/indicatorViewSecond"
+            motion:layout_constraintStart_toStartOf="@+id/indicatorViewSecond"
+            motion:layout_constraintTop_toTopOf="@+id/indicatorViewSecond" />
+        <Constraint
+            android:id="@+id/indicatorViewActiveBottom"
+            android:layout_width="30dp"
+            android:layout_height="5dp"
+            motion:layout_constraintBottom_toBottomOf="@id/indicatorViewSecond"
+            motion:layout_constraintEnd_toEndOf="@+id/indicatorViewSecond"
+            motion:layout_constraintStart_toStartOf="@+id/indicatorViewSecond" />
     </ConstraintSet>
     <Transition
         android:id="@+id/toLeft"
@@ -225,6 +239,60 @@
                 android:scaleY="1"
                 motion:framePosition="100"
                 motion:motionTarget="@+id/subTitleViewSecond" />
+            <KeyAttribute
+                android:scaleX="0.5"
+                android:scaleY="1"
+                motion:framePosition="10"
+                motion:motionTarget="@+id/indicatorViewActiveBottom" />
+            <KeyAttribute
+                android:scaleX="1.5"
+                android:scaleY="1"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/indicatorViewActiveBottom" />
+            <KeyAttribute
+                android:scaleX="0.5"
+                android:scaleY="1"
+                motion:framePosition="90"
+                motion:motionTarget="@+id/indicatorViewActiveBottom" />
+            <KeyAttribute
+                android:scaleX="0.5"
+                android:scaleY="1"
+                motion:framePosition="10"
+                motion:motionTarget="@+id/indicatorViewActiveTop" />
+            <KeyAttribute
+                android:scaleX="1.5"
+                android:scaleY="1"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/indicatorViewActiveTop" />
+            <KeyAttribute
+                android:scaleX="0.5"
+                android:scaleY="1"
+                motion:framePosition="90"
+                motion:motionTarget="@+id/indicatorViewActiveTop" />
+            <KeyPosition
+                motion:framePosition="10"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/indicatorViewActiveTop"
+                motion:percentX="0"
+                motion:percentY="-0.1" />
+            <KeyPosition
+                motion:framePosition="90"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/indicatorViewActiveTop"
+                motion:percentX="1"
+                motion:percentY="-0.1" />
+            <KeyPosition
+                motion:framePosition="10"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/indicatorViewActiveBottom"
+                motion:percentX="0"
+                motion:percentY="0.1" />
+            <KeyPosition
+                motion:framePosition="90"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/indicatorViewActiveBottom"
+                motion:percentX="1"
+                motion:percentY="0.1" />
         </KeyFrameSet>
     </Transition>
     <ConstraintSet android:id="@+id/end">
@@ -311,6 +379,20 @@
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/titleViewThird"
             motion:layout_constraintVertical_bias="0" />
+        <Constraint
+            android:id="@+id/indicatorViewActiveTop"
+            android:layout_width="30dp"
+            android:layout_height="5dp"
+            motion:layout_constraintEnd_toEndOf="@+id/indicatorViewThird"
+            motion:layout_constraintStart_toStartOf="@+id/indicatorViewThird"
+            motion:layout_constraintTop_toTopOf="@+id/indicatorViewThird" />
+        <Constraint
+            android:id="@+id/indicatorViewActiveBottom"
+            android:layout_width="30dp"
+            android:layout_height="5dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/indicatorViewThird"
+            motion:layout_constraintEnd_toEndOf="@+id/indicatorViewThird"
+            motion:layout_constraintStart_toStartOf="@+id/indicatorViewThird"/>
     </ConstraintSet>
     <Transition
         android:id="@+id/toEnd"
@@ -324,6 +406,60 @@
                 android:scaleY="1"
                 motion:framePosition="100"
                 motion:motionTarget="@+id/backgroundViewThird" />
+            <KeyAttribute
+                android:scaleX="0.5"
+                android:scaleY="1"
+                motion:framePosition="10"
+                motion:motionTarget="@+id/indicatorViewActiveBottom" />
+            <KeyAttribute
+                android:scaleX="1.5"
+                android:scaleY="1"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/indicatorViewActiveBottom" />
+            <KeyAttribute
+                android:scaleX="0.5"
+                android:scaleY="1"
+                motion:framePosition="90"
+                motion:motionTarget="@+id/indicatorViewActiveBottom" />
+            <KeyAttribute
+                android:scaleX="0.5"
+                android:scaleY="1"
+                motion:framePosition="10"
+                motion:motionTarget="@+id/indicatorViewActiveTop" />
+            <KeyAttribute
+                android:scaleX="1.5"
+                android:scaleY="1"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/indicatorViewActiveTop" />
+            <KeyAttribute
+                android:scaleX="0.5"
+                android:scaleY="1"
+                motion:framePosition="90"
+                motion:motionTarget="@+id/indicatorViewActiveTop" />
+            <KeyPosition
+                motion:framePosition="10"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/indicatorViewActiveTop"
+                motion:percentX="0"
+                motion:percentY="-0.1" />
+            <KeyPosition
+                motion:framePosition="90"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/indicatorViewActiveTop"
+                motion:percentX="1"
+                motion:percentY="-0.1" />
+            <KeyPosition
+                motion:framePosition="10"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/indicatorViewActiveBottom"
+                motion:percentX="0"
+                motion:percentY="0.1" />
+            <KeyPosition
+                motion:framePosition="90"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/indicatorViewActiveBottom"
+                motion:percentX="1"
+                motion:percentY="0.1" />
         </KeyFrameSet>
         <OnSwipe
             motion:dragDirection="dragLeft"
