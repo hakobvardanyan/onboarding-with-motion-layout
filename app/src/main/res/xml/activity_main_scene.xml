@@ -54,23 +54,24 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.35" />
         <Constraint
-            android:id="@+id/titleView"
+            android:id="@+id/titleViewFirst"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            motion:layout_constrainedWidth="true"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/backgroundViewFirst"
             motion:layout_constraintVertical_bias="0.7" />
         <Constraint
-            android:id="@+id/subTitleView"
+            android:id="@+id/subTitleViewFirst"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             motion:layout_constrainedWidth="true"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="parent" />
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/titleViewFirst" />
         <Constraint
             android:id="@+id/backgroundViewSecond"
             android:layout_width="150dp"
@@ -97,7 +98,7 @@
             motion:layout_constraintEnd_toEndOf="@+id/backgroundViewSecond"
             motion:layout_constraintStart_toEndOf="@+id/backgroundViewSecond"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond"
-            motion:layout_constraintVertical_bias="0.2"/>
+            motion:layout_constraintVertical_bias="0.2" />
         <Constraint
             android:id="@+id/messagesView"
             android:layout_width="130dp"
@@ -108,6 +109,31 @@
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond"
             motion:layout_constraintVertical_bias="0.4" />
+        <Constraint
+            android:id="@+id/titleViewSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/backgroundViewSecond"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/subTitleViewSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/titleViewSecond"
+            motion:layout_constraintVertical_bias="0" />
     </ConstraintSet>
     <Transition
         android:id="@+id/toLeft"
@@ -154,13 +180,13 @@
                 android:scaleX="0.4"
                 android:scaleY="0.4"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/titleView" />
+                motion:motionTarget="@+id/titleViewFirst" />
             <KeyAttribute
                 android:alpha="0"
-                android:scaleX="2"
-                android:scaleY="2"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/subTitleView" />
+                motion:motionTarget="@+id/subTitleViewFirst" />
             <KeyAttribute
                 android:alpha="1"
                 android:rotation="0"
@@ -187,6 +213,18 @@
                 android:scaleY="1"
                 motion:framePosition="100"
                 motion:motionTarget="@+id/messagesView" />
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/titleViewSecond" />
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/subTitleViewSecond" />
         </KeyFrameSet>
     </Transition>
 </MotionScene>
