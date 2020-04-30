@@ -392,7 +392,7 @@
             android:layout_height="5dp"
             motion:layout_constraintBottom_toBottomOf="@+id/indicatorViewThird"
             motion:layout_constraintEnd_toEndOf="@+id/indicatorViewThird"
-            motion:layout_constraintStart_toStartOf="@+id/indicatorViewThird"/>
+            motion:layout_constraintStart_toStartOf="@+id/indicatorViewThird" />
     </ConstraintSet>
     <Transition
         android:id="@+id/toEnd"
@@ -406,6 +406,44 @@
                 android:scaleY="1"
                 motion:framePosition="100"
                 motion:motionTarget="@+id/backgroundViewThird" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/titleViewSecond" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/subTitleViewSecond" />
+            <KeyAttribute
+                android:alpha="0"
+                android:rotation="360"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/messagesView" />
+            <KeyAttribute
+                android:alpha="0"
+                android:rotation="90"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/backgroundViewSecond" />
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/titleViewThird" />
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/subTitleViewThird" />
             <KeyAttribute
                 android:scaleX="0.5"
                 android:scaleY="1"
