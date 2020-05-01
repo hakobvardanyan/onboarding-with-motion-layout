@@ -36,24 +36,25 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewSecond"
-            motion:layout_constraintStart_toEndOf="@+id/backgroundViewSecond"
             motion:layout_constraintEnd_toEndOf="@+id/backgroundViewSecond"
+            motion:layout_constraintStart_toEndOf="@+id/backgroundViewSecond"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond" />
         <Constraint
             android:id="@+id/shockAbsorberView"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            motion:layout_constraintBottom_toTopOf="@+id/backgroundViewSecond"
-            motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond"
-            motion:layout_constraintStart_toStartOf="@+id/backgroundViewSecond"/>
+            android:layout_marginTop="24dp"
+            motion:layout_constraintEnd_toStartOf="@+id/backgroundViewSecond"
+            motion:layout_constraintStart_toStartOf="@+id/backgroundViewSecond"
+            motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond" />
         <Constraint
             android:id="@+id/headlightsView"
             android:layout_width="40dp"
             android:layout_height="40dp"
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewSecond"
-            motion:layout_constraintTop_toBottomOf="@+id/backgroundViewSecond"
             motion:layout_constraintEnd_toEndOf="@+id/backgroundViewSecond"
-            motion:layout_constraintStart_toStartOf="@+id/backgroundViewSecond"/>
+            motion:layout_constraintStart_toStartOf="@+id/backgroundViewSecond"
+            motion:layout_constraintTop_toBottomOf="@+id/backgroundViewSecond" />
         <Constraint
             android:id="@+id/carView"
             android:layout_width="100dp"
@@ -83,23 +84,21 @@
             motion:layout_constraintTop_toBottomOf="@+id/titleViewFirst" />
         <Constraint
             android:id="@+id/backgroundViewSecond"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.3" />
         <Constraint
-            android:id="@+id/messagesView"
-            android:layout_width="130dp"
+            android:id="@+id/carVinCodeView"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewSecond"
             motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintHorizontal_bias="0.4"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond"
-            motion:layout_constraintVertical_bias="0.4" />
+            motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond" />
         <Constraint
             android:id="@+id/titleViewSecond"
             android:layout_width="wrap_content"
@@ -155,24 +154,6 @@
                 android:scaleY="0.2"
                 motion:framePosition="100"
                 motion:motionTarget="@+id/backgroundViewFirst" />
-<!--            <KeyAttribute-->
-<!--                android:alpha="0"-->
-<!--                android:scaleX="0.1"-->
-<!--                android:scaleY="0.1"-->
-<!--                motion:framePosition="100"-->
-<!--                motion:motionTarget="@+id/diskView" />-->
-<!--            <KeyAttribute-->
-<!--                android:alpha="0"-->
-<!--                android:scaleX="0.1"-->
-<!--                android:scaleY="0.1"-->
-<!--                motion:framePosition="100"-->
-<!--                motion:motionTarget="@+id/shockAbsorberView" />-->
-<!--            <KeyAttribute-->
-<!--                android:alpha="0"-->
-<!--                android:scaleX="0.1"-->
-<!--                android:scaleY="0.1"-->
-<!--                motion:framePosition="100"-->
-<!--                motion:motionTarget="@+id/headlightsView" />-->
             <KeyAttribute
                 android:alpha="0"
                 android:rotation="360"
@@ -205,7 +186,7 @@
                 android:scaleX="1"
                 android:scaleY="1"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/messagesView" />
+                motion:motionTarget="@+id/carVinCodeView" />
             <KeyAttribute
                 android:alpha="1"
                 android:scaleX="1"
@@ -272,21 +253,76 @@
                 motion:motionTarget="@+id/indicatorViewActiveBottom"
                 motion:percentX="1"
                 motion:percentY="0.13" />
+            <KeyPosition
+                motion:framePosition="20"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/diskView"
+                motion:percentX="0.25"
+                motion:percentY="-0.3"
+                motion:transitionEasing="" />
+            <KeyPosition
+                motion:framePosition="40"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/diskView"
+                motion:percentX="0.5"
+                motion:percentY="-0.5" />
+            <KeyPosition
+                motion:framePosition="60"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/diskView"
+                motion:percentX="0.8"
+                motion:percentY="-0.55" />
+            <KeyPosition
+                motion:framePosition="80"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/diskView"
+                motion:percentX="1"
+                motion:percentY="-0.3" />
+            <KeyPosition
+                motion:framePosition="25"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/shockAbsorberView"
+                motion:percentX="0.25"
+                motion:percentY="-0.25" />
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/shockAbsorberView"
+                motion:percentX="0.75"
+                motion:percentY="-0.25" />
+            <KeyPosition
+                motion:framePosition="25"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/headlightsView"
+                motion:percentX="0.25"
+                motion:percentY="-0.4" />
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/headlightsView"
+                motion:percentX="0.50"
+                motion:percentY="-0.6" />
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/headlightsView"
+                motion:percentX="0.75"
+                motion:percentY="-0.4" />
         </KeyFrameSet>
     </Transition>
     <ConstraintSet android:id="@+id/end">
         <Constraint
             android:id="@+id/backgroundViewSecond"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:rotation="90"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.15" />
         <Constraint
-            android:id="@+id/messagesView"
-            android:layout_width="80dp"
+            android:id="@+id/carVinCodeView"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"
@@ -399,7 +435,7 @@
                 android:scaleX="0.4"
                 android:scaleY="0.4"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/messagesView" />
+                motion:motionTarget="@+id/carVinCodeView" />
             <KeyAttribute
                 android:alpha="0"
                 android:rotation="90"
