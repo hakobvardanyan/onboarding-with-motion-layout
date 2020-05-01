@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_main_scene"
-    tools:context=".MainActivity">
+    app:layoutDescription="@xml/activity_onboarding_scene"
+    tools:context=".OnBoardingActivity">
 
     <View
         android:id="@+id/backgroundViewFirst"
