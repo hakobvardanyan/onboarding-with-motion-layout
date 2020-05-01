@@ -103,7 +103,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:alpha="0"
-        android:background="@drawable/background_orange_rounded"
+        android:background="@drawable/background_black_rounded"
         android:rotation="90"
         android:scaleX="0.2"
         android:scaleY="0.2"
@@ -111,6 +111,19 @@
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.15" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/orderBoxView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:rotation="180"
+        android:scaleX="0.3"
+        android:scaleY="0.3"
+        android:src="@drawable/ic_order_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/titleViewThird"

@@ -320,6 +320,14 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.15" />
         <Constraint
+            android:id="@+id/orderBoxView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewThird"
+            motion:layout_constraintEnd_toEndOf="@+id/backgroundViewThird"
+            motion:layout_constraintStart_toStartOf="@+id/backgroundViewThird"
+            motion:layout_constraintTop_toTopOf="@+id/backgroundViewThird" />
+        <Constraint
             android:id="@+id/carVinCodeView"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
@@ -423,8 +431,8 @@
             android:id="@+id/shockAbsorberView"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            motion:layout_constraintTop_toTopOf="@+id/backgroundViewThird"
-            motion:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst" />
+            motion:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
+            motion:layout_constraintTop_toTopOf="@+id/backgroundViewThird" />
     </ConstraintSet>
     <Transition
         android:id="@+id/toEnd"
