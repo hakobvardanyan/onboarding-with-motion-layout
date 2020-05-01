@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/starsViewTop"
+        android:id="@+id/diskView"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="@+id/backgroundViewFirst" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/starsViewStart"
+        android:id="@+id/shockAbsorberView"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginBottom="16dp"
@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/starsViewEnd"
+        android:id="@+id/headlightsView"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/ic_car_part_headlights"
@@ -112,28 +112,6 @@
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.15" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/heartViewStart"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:alpha="0"
-        android:scaleX="0.1"
-        android:scaleY="0.1"
-        android:src="@drawable/ic_three_hearts"
-        app:layout_constraintBottom_toTopOf="@+id/backgroundViewSecond"
-        app:layout_constraintStart_toEndOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/heartViewEnd"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:alpha="0"
-        android:scaleX="0.1"
-        android:scaleY="0.1"
-        android:src="@drawable/ic_hearts_many"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backgroundViewSecond" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/messagesView"

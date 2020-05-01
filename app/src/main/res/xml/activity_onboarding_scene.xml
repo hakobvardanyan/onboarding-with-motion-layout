@@ -13,7 +13,7 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.3" />
         <Constraint
-            android:id="@+id/starsViewTop"
+            android:id="@+id/diskView"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="16dp"
@@ -32,14 +32,14 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.15" />
         <Constraint
-            android:id="@+id/starsViewTop"
+            android:id="@+id/diskView"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginBottom="40dp"
             motion:layout_constraintBottom_toTopOf="@+id/backgroundViewFirst"
             motion:layout_constraintEnd_toStartOf="parent" />
         <Constraint
-            android:id="@+id/starsViewStart"
+            android:id="@+id/shockAbsorberView"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="50dp"
@@ -81,24 +81,6 @@
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.3" />
-        <Constraint
-            android:id="@+id/heartViewStart"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewSecond"
-            motion:layout_constraintEnd_toStartOf="@+id/backgroundViewSecond"
-            motion:layout_constraintStart_toStartOf="@+id/backgroundViewSecond"
-            motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond"
-            motion:layout_constraintVertical_bias="0.3" />
-        <Constraint
-            android:id="@+id/heartViewEnd"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewSecond"
-            motion:layout_constraintEnd_toEndOf="@+id/backgroundViewSecond"
-            motion:layout_constraintStart_toEndOf="@+id/backgroundViewSecond"
-            motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond"
-            motion:layout_constraintVertical_bias="0.2" />
         <Constraint
             android:id="@+id/messagesView"
             android:layout_width="130dp"
@@ -169,19 +151,19 @@
                 android:scaleX="0.1"
                 android:scaleY="0.1"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/starsViewTop" />
+                motion:motionTarget="@+id/diskView" />
             <KeyAttribute
                 android:alpha="0"
                 android:scaleX="0.1"
                 android:scaleY="0.1"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/starsViewStart" />
+                motion:motionTarget="@+id/shockAbsorberView" />
             <KeyAttribute
                 android:alpha="0"
                 android:scaleX="0.1"
                 android:scaleY="0.1"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/starsViewEnd" />
+                motion:motionTarget="@+id/headlightsView" />
             <KeyAttribute
                 android:alpha="0"
                 android:rotation="360"
@@ -208,18 +190,6 @@
                 android:scaleY="1"
                 motion:framePosition="100"
                 motion:motionTarget="@+id/backgroundViewSecond" />
-            <KeyAttribute
-                android:alpha="1"
-                android:scaleX="1"
-                android:scaleY="1"
-                motion:framePosition="100"
-                motion:motionTarget="@+id/heartViewStart" />
-            <KeyAttribute
-                android:alpha="1"
-                android:scaleX="1"
-                android:scaleY="1"
-                motion:framePosition="100"
-                motion:motionTarget="@+id/heartViewEnd" />
             <KeyAttribute
                 android:alpha="1"
                 android:rotation="0"
@@ -305,19 +275,6 @@
             motion:layout_constraintEnd_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.15" />
-        <Constraint
-            android:id="@+id/heartViewEnd"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            motion:layout_constraintBottom_toTopOf="@+id/backgroundViewSecond"
-            motion:layout_constraintEnd_toStartOf="parent" />
-        <Constraint
-            android:id="@+id/heartViewStart"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="50dp"
-            motion:layout_constraintEnd_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/backgroundViewSecond" />
         <Constraint
             android:id="@+id/messagesView"
             android:layout_width="80dp"
