@@ -274,25 +274,25 @@
                 motion:keyPositionType="pathRelative"
                 motion:motionTarget="@+id/indicatorViewActiveTop"
                 motion:percentX="0"
-                motion:percentY="-0.1" />
+                motion:percentY="-0.13" />
             <KeyPosition
                 motion:framePosition="90"
                 motion:keyPositionType="pathRelative"
                 motion:motionTarget="@+id/indicatorViewActiveTop"
                 motion:percentX="1"
-                motion:percentY="-0.1" />
+                motion:percentY="-0.13" />
             <KeyPosition
                 motion:framePosition="10"
                 motion:keyPositionType="pathRelative"
                 motion:motionTarget="@+id/indicatorViewActiveBottom"
                 motion:percentX="0"
-                motion:percentY="0.1" />
+                motion:percentY="0.13" />
             <KeyPosition
                 motion:framePosition="90"
                 motion:keyPositionType="pathRelative"
                 motion:motionTarget="@+id/indicatorViewActiveBottom"
                 motion:percentX="1"
-                motion:percentY="0.1" />
+                motion:percentY="0.13" />
         </KeyFrameSet>
     </Transition>
     <ConstraintSet android:id="@+id/end">
@@ -488,25 +488,25 @@
                 motion:keyPositionType="pathRelative"
                 motion:motionTarget="@+id/indicatorViewActiveTop"
                 motion:percentX="0"
-                motion:percentY="-0.1" />
+                motion:percentY="-0.13" />
             <KeyPosition
                 motion:framePosition="90"
                 motion:keyPositionType="pathRelative"
                 motion:motionTarget="@+id/indicatorViewActiveTop"
                 motion:percentX="1"
-                motion:percentY="-0.1" />
+                motion:percentY="-0.13" />
             <KeyPosition
                 motion:framePosition="10"
                 motion:keyPositionType="pathRelative"
                 motion:motionTarget="@+id/indicatorViewActiveBottom"
                 motion:percentX="0"
-                motion:percentY="0.1" />
+                motion:percentY="0.13" />
             <KeyPosition
                 motion:framePosition="90"
                 motion:keyPositionType="pathRelative"
                 motion:motionTarget="@+id/indicatorViewActiveBottom"
                 motion:percentX="1"
-                motion:percentY="0.1" />
+                motion:percentY="0.13" />
             <KeyAttribute
                 android:alpha="1"
                 android:scaleX="1"
