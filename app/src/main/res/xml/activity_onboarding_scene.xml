@@ -46,7 +46,7 @@
             motion:layout_constraintEnd_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/backgroundViewFirst" />
         <Constraint
-            android:id="@+id/phoneView"
+            android:id="@+id/carView"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="parent"
@@ -188,7 +188,7 @@
                 android:scaleX="0.3"
                 android:scaleY="0.3"
                 motion:framePosition="100"
-                motion:motionTarget="@+id/phoneView" />
+                motion:motionTarget="@+id/carView" />
             <KeyAttribute
                 android:alpha="0"
                 android:scaleX="0.4"
