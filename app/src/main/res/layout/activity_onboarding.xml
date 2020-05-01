@@ -10,8 +10,8 @@
 
     <View
         android:id="@+id/backgroundViewFirst"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="@dimen/background_view_size"
+        android:layout_height="@dimen/background_view_size"
         android:background="@drawable/background_black_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +20,7 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/carView"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/main_icon_size"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_car_service"
         app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
@@ -50,8 +50,8 @@
 
     <View
         android:id="@+id/backgroundViewSecond"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="@dimen/background_view_size"
+        android:layout_height="@dimen/background_view_size"
         android:alpha="0"
         android:background="@drawable/background_black_rounded"
         android:rotation="90"
@@ -64,7 +64,7 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/carVinCodeView"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/main_icon_size"
         android:layout_height="wrap_content"
         android:alpha="0"
         android:rotation="360"
@@ -100,8 +100,8 @@
 
     <View
         android:id="@+id/backgroundViewThird"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="@dimen/background_view_size"
+        android:layout_height="@dimen/background_view_size"
         android:alpha="0"
         android:background="@drawable/background_black_rounded"
         android:rotation="90"
@@ -114,7 +114,7 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/orderBoxView"
-        android:layout_width="100dp"
+        android:layout_width="@dimen/main_icon_size"
         android:layout_height="wrap_content"
         android:alpha="0"
         android:rotation="180"
@@ -150,9 +150,9 @@
 
     <View
         android:id="@+id/indicatorViewFirst"
-        android:layout_width="16dp"
-        android:layout_height="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="@dimen/common_size"
+        android:layout_height="@dimen/small_size"
+        android:layout_marginBottom="@dimen/common_size"
         android:background="@drawable/background_indicator_disabled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/indicatorViewSecond"
@@ -161,10 +161,10 @@
 
     <View
         android:id="@+id/indicatorViewSecond"
-        android:layout_width="16dp"
-        android:layout_height="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="@dimen/common_size"
+        android:layout_height="@dimen/small_size"
+        android:layout_marginStart="@dimen/common_size"
+        android:layout_marginEnd="@dimen/common_size"
         android:background="@drawable/background_indicator_disabled"
         app:layout_constraintBottom_toBottomOf="@+id/indicatorViewFirst"
         app:layout_constraintEnd_toStartOf="@+id/indicatorViewThird"
@@ -173,8 +173,8 @@
 
     <View
         android:id="@+id/indicatorViewThird"
-        android:layout_width="16dp"
-        android:layout_height="8dp"
+        android:layout_width="@dimen/common_size"
+        android:layout_height="@dimen/small_size"
         android:background="@drawable/background_indicator_disabled"
         app:layout_constraintBottom_toBottomOf="@+id/indicatorViewSecond"
         app:layout_constraintEnd_toEndOf="parent"
@@ -183,8 +183,8 @@
 
     <View
         android:id="@+id/indicatorViewActiveTop"
-        android:layout_width="16dp"
-        android:layout_height="4dp"
+        android:layout_width="@dimen/common_size"
+        android:layout_height="@dimen/tiny_size"
         android:background="@drawable/background_indicator_enabled_top"
         app:layout_constraintEnd_toEndOf="@+id/indicatorViewFirst"
         app:layout_constraintStart_toStartOf="@+id/indicatorViewFirst"
@@ -192,8 +192,8 @@
 
     <View
         android:id="@+id/indicatorViewActiveBottom"
-        android:layout_width="16dp"
-        android:layout_height="4dp"
+        android:layout_width="@dimen/common_size"
+        android:layout_height="@dimen/tiny_size"
         android:background="@drawable/background_indicator_enabled_bottom"
         app:layout_constraintBottom_toBottomOf="@+id/indicatorViewFirst"
         app:layout_constraintEnd_toEndOf="@+id/indicatorViewFirst"
@@ -201,17 +201,17 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/finishButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:alpha="0"
-        android:paddingStart="20dp"
-        android:paddingEnd="20sp"
-        android:textColor="@android:color/white"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:background="@drawable/background_button"
+        android:paddingStart="@dimen/medium_size"
+        android:paddingEnd="@dimen/medium_size"
         android:scaleX="0.2"
         android:scaleY="0.2"
         android:text="Get started"
+        android:textColor="@android:color/white"
         app:layout_constrainedWidth="true"
         app:layout_constraintBottom_toTopOf="@id/indicatorViewFirst"
         app:layout_constraintEnd_toEndOf="parent"
@@ -220,9 +220,9 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/diskView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
+        android:layout_marginStart="@dimen/common_size"
         android:src="@drawable/ic_car_part_disk"
         app:layout_constraintBottom_toTopOf="@+id/backgroundViewFirst"
         app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
@@ -230,9 +230,9 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/shockAbsorberView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
+        android:layout_marginBottom="@dimen/common_size"
         android:src="@drawable/ic_car_part_shock_absorber"
         app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
         app:layout_constraintEnd_toStartOf="@+id/backgroundViewFirst"
@@ -240,8 +240,8 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/headlightsView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
         android:src="@drawable/ic_car_part_headlights"
         app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
         app:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"

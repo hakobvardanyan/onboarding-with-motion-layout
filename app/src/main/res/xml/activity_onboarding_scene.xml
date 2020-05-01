@@ -5,8 +5,8 @@
     <ConstraintSet android:id="@+id/start">
         <Constraint
             android:id="@+id/backgroundViewFirst"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/background_view_size"
+            android:layout_height="@dimen/background_view_size"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
@@ -14,9 +14,9 @@
             motion:layout_constraintVertical_bias="0.3" />
         <Constraint
             android:id="@+id/diskView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:layout_marginStart="@dimen/common_size"
             motion:layout_constraintBottom_toTopOf="@+id/backgroundViewFirst"
             motion:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewFirst" />
@@ -24,39 +24,39 @@
     <ConstraintSet android:id="@+id/left">
         <Constraint
             android:id="@+id/backgroundViewFirst"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/background_view_size"
+            android:layout_height="@dimen/background_view_size"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.15" />
         <Constraint
             android:id="@+id/diskView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewSecond"
             motion:layout_constraintEnd_toEndOf="@+id/backgroundViewSecond"
             motion:layout_constraintStart_toEndOf="@+id/backgroundViewSecond"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond" />
         <Constraint
             android:id="@+id/shockAbsorberView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
+            android:layout_marginTop="@dimen/large_size"
             motion:layout_constraintEnd_toStartOf="@+id/backgroundViewSecond"
             motion:layout_constraintStart_toStartOf="@+id/backgroundViewSecond"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewSecond" />
         <Constraint
             android:id="@+id/headlightsView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewSecond"
             motion:layout_constraintEnd_toEndOf="@+id/backgroundViewSecond"
             motion:layout_constraintStart_toStartOf="@+id/backgroundViewSecond"
             motion:layout_constraintTop_toBottomOf="@+id/backgroundViewSecond" />
         <Constraint
             android:id="@+id/carView"
-            android:layout_width="100dp"
+            android:layout_width="@dimen/main_icon_size"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"
@@ -75,16 +75,16 @@
             android:id="@+id/subTitleViewFirst"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="@dimen/larger_size"
+            android:layout_marginEnd="@dimen/larger_size"
             motion:layout_constrainedWidth="true"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/titleViewFirst" />
         <Constraint
             android:id="@+id/backgroundViewSecond"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/background_view_size"
+            android:layout_height="@dimen/background_view_size"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
@@ -92,7 +92,7 @@
             motion:layout_constraintVertical_bias="0.3" />
         <Constraint
             android:id="@+id/carVinCodeView"
-            android:layout_width="100dp"
+            android:layout_width="@dimen/main_icon_size"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewSecond"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -102,8 +102,8 @@
             android:id="@+id/titleViewSecond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="@dimen/larger_size"
+            android:layout_marginEnd="@dimen/larger_size"
             motion:layout_constrainedWidth="true"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -114,9 +114,9 @@
             android:id="@+id/subTitleViewSecond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="@dimen/larger_size"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginEnd="@dimen/larger_size"
             motion:layout_constrainedWidth="true"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -125,15 +125,15 @@
             motion:layout_constraintVertical_bias="0" />
         <Constraint
             android:id="@+id/indicatorViewActiveTop"
-            android:layout_width="16dp"
-            android:layout_height="4dp"
+            android:layout_width="@dimen/common_size"
+            android:layout_height="@dimen/tiny_size"
             motion:layout_constraintEnd_toEndOf="@+id/indicatorViewSecond"
             motion:layout_constraintStart_toStartOf="@+id/indicatorViewSecond"
             motion:layout_constraintTop_toTopOf="@+id/indicatorViewSecond" />
         <Constraint
             android:id="@+id/indicatorViewActiveBottom"
-            android:layout_width="16dp"
-            android:layout_height="4dp"
+            android:layout_width="@dimen/common_size"
+            android:layout_height="@dimen/tiny_size"
             motion:layout_constraintBottom_toBottomOf="@id/indicatorViewSecond"
             motion:layout_constraintEnd_toEndOf="@+id/indicatorViewSecond"
             motion:layout_constraintStart_toStartOf="@+id/indicatorViewSecond" />
@@ -312,8 +312,8 @@
     <ConstraintSet android:id="@+id/end">
         <Constraint
             android:id="@+id/backgroundViewSecond"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/background_view_size"
+            android:layout_height="@dimen/background_view_size"
             android:rotation="90"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"
@@ -321,7 +321,7 @@
             motion:layout_constraintVertical_bias="0.15" />
         <Constraint
             android:id="@+id/orderBoxView"
-            android:layout_width="100dp"
+            android:layout_width="@dimen/main_icon_size"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewThird"
             motion:layout_constraintEnd_toEndOf="@+id/backgroundViewThird"
@@ -329,7 +329,7 @@
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewThird" />
         <Constraint
             android:id="@+id/carVinCodeView"
-            android:layout_width="100dp"
+            android:layout_width="@dimen/main_icon_size"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"
@@ -348,16 +348,16 @@
             android:id="@+id/subTitleViewSecond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="@dimen/larger_size"
+            android:layout_marginEnd="@dimen/larger_size"
             motion:layout_constrainedWidth="true"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/titleViewSecond" />
         <Constraint
             android:id="@+id/backgroundViewThird"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/background_view_size"
+            android:layout_height="@dimen/background_view_size"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
@@ -367,8 +367,8 @@
             android:id="@+id/titleViewThird"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="@dimen/larger_size"
+            android:layout_marginEnd="@dimen/larger_size"
             motion:layout_constrainedWidth="true"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -379,9 +379,9 @@
             android:id="@+id/subTitleViewThird"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="@dimen/larger_size"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginEnd="@dimen/larger_size"
             motion:layout_constrainedWidth="true"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -390,15 +390,15 @@
             motion:layout_constraintVertical_bias="0" />
         <Constraint
             android:id="@+id/indicatorViewActiveTop"
-            android:layout_width="16dp"
-            android:layout_height="4dp"
+            android:layout_width="@dimen/common_size"
+            android:layout_height="@dimen/tiny_size"
             motion:layout_constraintEnd_toEndOf="@+id/indicatorViewThird"
             motion:layout_constraintStart_toStartOf="@+id/indicatorViewThird"
             motion:layout_constraintTop_toTopOf="@+id/indicatorViewThird" />
         <Constraint
             android:id="@+id/indicatorViewActiveBottom"
-            android:layout_width="16dp"
-            android:layout_height="4dp"
+            android:layout_width="@dimen/common_size"
+            android:layout_height="@dimen/tiny_size"
             motion:layout_constraintBottom_toBottomOf="@+id/indicatorViewThird"
             motion:layout_constraintEnd_toEndOf="@+id/indicatorViewThird"
             motion:layout_constraintStart_toStartOf="@+id/indicatorViewThird" />
@@ -413,24 +413,24 @@
             motion:layout_constraintTop_toBottomOf="@+id/subTitleViewThird" />
         <Constraint
             android:id="@+id/diskView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewThird"
             motion:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
             motion:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
             motion:layout_constraintTop_toBottomOf="@+id/backgroundViewThird" />
         <Constraint
             android:id="@+id/headlightsView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewThird"
             motion:layout_constraintEnd_toStartOf="@+id/backgroundViewFirst"
             motion:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewThird" />
         <Constraint
             android:id="@+id/shockAbsorberView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="@dimen/small_icon_size"
             motion:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewThird" />
     </ConstraintSet>

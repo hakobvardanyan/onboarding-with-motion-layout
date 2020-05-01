@@ -2,8 +2,8 @@
     <!-- Application theme for dark theme. -->
     <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/purple200</item>
-        <item name="colorPrimaryDark">@color/purple700</item>
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
         <item name="colorAccent">@color/teal200</item>
     </style>
 

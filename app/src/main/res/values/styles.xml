@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/purple500</item>
-        <item name="colorPrimaryDark">@color/purple700</item>
+        <item name="colorPrimary">@color/colorBlack900</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
         <item name="colorAccent">@color/teal200</item>
     </style>
 
@@ -11,13 +11,13 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="layout_constrainedWidth">true</item>
-        <item name="android:layout_marginStart">32dp</item>
-        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:layout_marginStart">@dimen/larger_size</item>
+        <item name="android:layout_marginEnd">@dimen/larger_size</item>
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center</item>
         <item name="android:maxLines">2</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/title_size</item>
         <item name="android:textStyle">bold</item>
         <item name="autoSizeTextType">uniform</item>
     </style>
@@ -25,15 +25,15 @@
     <style name="SubTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginTop">@dimen/small_size</item>
         <item name="layout_constrainedWidth">true</item>
-        <item name="android:layout_marginStart">32dp</item>
-        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:layout_marginStart">@dimen/larger_size</item>
+        <item name="android:layout_marginEnd">@dimen/larger_size</item>
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center</item>
         <item name="android:maxLines">3</item>
         <item name="android:textColor">@color/grey</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/sub_title_size</item>
         <item name="autoSizeTextType">uniform</item>
     </style>
 

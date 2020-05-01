@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="background_view_size">200dp</dimen>
+    <dimen name="main_icon_size">100dp</dimen>
+    <dimen name="small_icon_size">40dp</dimen>
+    <dimen name="larger_size">32dp</dimen>
+    <dimen name="large_size">24dp</dimen>
+    <dimen name="medium_size">20dp</dimen>
+    <dimen name="common_size">16dp</dimen>
+    <dimen name="small_size">8dp</dimen>
+    <dimen name="tiny_size">4dp</dimen>
+    <dimen name="title_size">28sp</dimen>
+    <dimen name="sub_title_size">18sp</dimen>
+</resources>
