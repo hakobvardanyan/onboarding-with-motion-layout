@@ -125,15 +125,15 @@
             motion:layout_constraintVertical_bias="0" />
         <Constraint
             android:id="@+id/indicatorViewActiveTop"
-            android:layout_width="10dp"
-            android:layout_height="5dp"
+            android:layout_width="16dp"
+            android:layout_height="4dp"
             motion:layout_constraintEnd_toEndOf="@+id/indicatorViewSecond"
             motion:layout_constraintStart_toStartOf="@+id/indicatorViewSecond"
             motion:layout_constraintTop_toTopOf="@+id/indicatorViewSecond" />
         <Constraint
             android:id="@+id/indicatorViewActiveBottom"
-            android:layout_width="10dp"
-            android:layout_height="5dp"
+            android:layout_width="16dp"
+            android:layout_height="4dp"
             motion:layout_constraintBottom_toBottomOf="@id/indicatorViewSecond"
             motion:layout_constraintEnd_toEndOf="@+id/indicatorViewSecond"
             motion:layout_constraintStart_toStartOf="@+id/indicatorViewSecond" />
@@ -390,15 +390,15 @@
             motion:layout_constraintVertical_bias="0" />
         <Constraint
             android:id="@+id/indicatorViewActiveTop"
-            android:layout_width="10dp"
-            android:layout_height="5dp"
+            android:layout_width="16dp"
+            android:layout_height="4dp"
             motion:layout_constraintEnd_toEndOf="@+id/indicatorViewThird"
             motion:layout_constraintStart_toStartOf="@+id/indicatorViewThird"
             motion:layout_constraintTop_toTopOf="@+id/indicatorViewThird" />
         <Constraint
             android:id="@+id/indicatorViewActiveBottom"
-            android:layout_width="10dp"
-            android:layout_height="5dp"
+            android:layout_width="16dp"
+            android:layout_height="4dp"
             motion:layout_constraintBottom_toBottomOf="@+id/indicatorViewThird"
             motion:layout_constraintEnd_toEndOf="@+id/indicatorViewThird"
             motion:layout_constraintStart_toStartOf="@+id/indicatorViewThird" />

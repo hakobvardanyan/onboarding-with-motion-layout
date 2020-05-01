@@ -150,8 +150,8 @@
 
     <View
         android:id="@+id/indicatorViewFirst"
-        android:layout_width="10dp"
-        android:layout_height="10dp"
+        android:layout_width="16dp"
+        android:layout_height="8dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/background_indicator_disabled"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -161,8 +161,8 @@
 
     <View
         android:id="@+id/indicatorViewSecond"
-        android:layout_width="10dp"
-        android:layout_height="10dp"
+        android:layout_width="16dp"
+        android:layout_height="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/background_indicator_disabled"
@@ -173,8 +173,8 @@
 
     <View
         android:id="@+id/indicatorViewThird"
-        android:layout_width="10dp"
-        android:layout_height="10dp"
+        android:layout_width="16dp"
+        android:layout_height="8dp"
         android:background="@drawable/background_indicator_disabled"
         app:layout_constraintBottom_toBottomOf="@+id/indicatorViewSecond"
         app:layout_constraintEnd_toEndOf="parent"
@@ -183,8 +183,8 @@
 
     <View
         android:id="@+id/indicatorViewActiveTop"
-        android:layout_width="10dp"
-        android:layout_height="5dp"
+        android:layout_width="16dp"
+        android:layout_height="4dp"
         android:background="@drawable/background_indicator_enabled_top"
         app:layout_constraintEnd_toEndOf="@+id/indicatorViewFirst"
         app:layout_constraintStart_toStartOf="@+id/indicatorViewFirst"
@@ -192,8 +192,8 @@
 
     <View
         android:id="@+id/indicatorViewActiveBottom"
-        android:layout_width="10dp"
-        android:layout_height="5dp"
+        android:layout_width="16dp"
+        android:layout_height="4dp"
         android:background="@drawable/background_indicator_enabled_bottom"
         app:layout_constraintBottom_toBottomOf="@+id/indicatorViewFirst"
         app:layout_constraintEnd_toEndOf="@+id/indicatorViewFirst"
