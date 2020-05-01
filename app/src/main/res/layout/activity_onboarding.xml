@@ -18,36 +18,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/diskView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/ic_car_part_disk"
-        app:layout_constraintBottom_toTopOf="@+id/backgroundViewFirst"
-        app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
-        app:layout_constraintTop_toTopOf="@+id/backgroundViewFirst" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/shockAbsorberView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/ic_car_part_shock_absorber"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
-        app:layout_constraintEnd_toStartOf="@+id/backgroundViewFirst"
-        app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/headlightsView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/ic_car_part_headlights"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
-        app:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
-        app:layout_constraintStart_toEndOf="@+id/backgroundViewFirst"
-        app:layout_constraintTop_toTopOf="@+id/backgroundViewFirst" />
-
-    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/carView"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
@@ -294,5 +264,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subTitleViewThird" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/diskView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_car_part_disk"
+        app:layout_constraintBottom_toTopOf="@+id/backgroundViewFirst"
+        app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
+        app:layout_constraintTop_toTopOf="@+id/backgroundViewFirst" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/shockAbsorberView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_car_part_shock_absorber"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
+        app:layout_constraintEnd_toStartOf="@+id/backgroundViewFirst"
+        app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/headlightsView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_car_part_headlights"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
+        app:layout_constraintStart_toEndOf="@+id/backgroundViewFirst"
+        app:layout_constraintTop_toTopOf="@+id/backgroundViewFirst" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
