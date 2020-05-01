@@ -11,7 +11,7 @@
         android:id="@+id/backgroundViewFirst"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:background="@drawable/background_green_light_rounded"
+        android:background="@drawable/background_black_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:src="@drawable/ic_stars"
+        android:src="@drawable/ic_car_part_disk"
         app:layout_constraintBottom_toTopOf="@+id/backgroundViewFirst"
         app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
         app:layout_constraintTop_toTopOf="@+id/backgroundViewFirst" />
@@ -32,7 +32,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/ic_stars"
+        android:src="@drawable/ic_car_part_disk"
         app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
         app:layout_constraintEnd_toStartOf="@+id/backgroundViewFirst"
         app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst" />
@@ -41,7 +41,7 @@
         android:id="@+id/starsViewEnd"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/ic_stars"
+        android:src="@drawable/ic_car_part_disk"
         app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
         app:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
         app:layout_constraintStart_toEndOf="@+id/backgroundViewFirst"
@@ -254,7 +254,7 @@
 
     <View
         android:id="@+id/indicatorViewFirst"
-        android:layout_width="20dp"
+        android:layout_width="10dp"
         android:layout_height="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/background_indicator_disabled"
@@ -265,7 +265,7 @@
 
     <View
         android:id="@+id/indicatorViewSecond"
-        android:layout_width="20dp"
+        android:layout_width="10dp"
         android:layout_height="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
@@ -277,7 +277,7 @@
 
     <View
         android:id="@+id/indicatorViewThird"
-        android:layout_width="20dp"
+        android:layout_width="10dp"
         android:layout_height="10dp"
         android:background="@drawable/background_indicator_disabled"
         app:layout_constraintBottom_toBottomOf="@+id/indicatorViewSecond"
@@ -287,7 +287,7 @@
 
     <View
         android:id="@+id/indicatorViewActiveTop"
-        android:layout_width="20dp"
+        android:layout_width="10dp"
         android:layout_height="5dp"
         android:background="@drawable/background_indicator_enabled_top"
         app:layout_constraintEnd_toEndOf="@+id/indicatorViewFirst"
@@ -296,7 +296,7 @@
 
     <View
         android:id="@+id/indicatorViewActiveBottom"
-        android:layout_width="20dp"
+        android:layout_width="10dp"
         android:layout_height="5dp"
         android:background="@drawable/background_indicator_enabled_bottom"
         app:layout_constraintBottom_toBottomOf="@+id/indicatorViewFirst"
