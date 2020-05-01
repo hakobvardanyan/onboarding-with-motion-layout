@@ -393,6 +393,15 @@
             motion:layout_constraintBottom_toBottomOf="@+id/indicatorViewThird"
             motion:layout_constraintEnd_toEndOf="@+id/indicatorViewThird"
             motion:layout_constraintStart_toStartOf="@+id/indicatorViewThird" />
+        <Constraint
+            android:id="@+id/finishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toTopOf="@id/indicatorViewFirst"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/subTitleViewThird" />
     </ConstraintSet>
     <Transition
         android:id="@+id/toEnd"
@@ -498,6 +507,12 @@
                 motion:motionTarget="@+id/indicatorViewActiveBottom"
                 motion:percentX="1"
                 motion:percentY="0.1" />
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/finishButton" />
         </KeyFrameSet>
         <OnSwipe
             motion:dragDirection="dragLeft"
