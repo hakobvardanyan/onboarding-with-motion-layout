@@ -5,8 +5,8 @@
     <ConstraintSet android:id="@+id/start">
         <Constraint
             android:id="@+id/backgroundViewFirst"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
@@ -25,8 +25,8 @@
     <ConstraintSet android:id="@+id/left">
         <Constraint
             android:id="@+id/backgroundViewFirst"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
@@ -47,7 +47,7 @@
             motion:layout_constraintTop_toBottomOf="@+id/backgroundViewFirst" />
         <Constraint
             android:id="@+id/phoneView"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toStartOf="parent"

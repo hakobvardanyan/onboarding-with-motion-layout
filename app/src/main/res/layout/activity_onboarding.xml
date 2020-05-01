@@ -9,8 +9,8 @@
 
     <View
         android:id="@+id/backgroundViewFirst"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:background="@drawable/background_green_light_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,9 +49,9 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/phoneView"
-        android:layout_width="80dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_smartphone"
+        android:src="@drawable/ic_car_service"
         app:layout_constraintBottom_toBottomOf="@+id/backgroundViewFirst"
         app:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
         app:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
