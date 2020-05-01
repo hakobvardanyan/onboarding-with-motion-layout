@@ -17,7 +17,6 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="0dp"
             motion:layout_constraintBottom_toTopOf="@+id/backgroundViewFirst"
             motion:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewFirst" />
@@ -349,8 +348,8 @@
             motion:layout_constraintTop_toBottomOf="@+id/titleViewSecond" />
         <Constraint
             android:id="@+id/backgroundViewThird"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
@@ -404,6 +403,28 @@
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/subTitleViewThird" />
+        <Constraint
+            android:id="@+id/diskView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewThird"
+            motion:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
+            motion:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
+            motion:layout_constraintTop_toBottomOf="@+id/backgroundViewThird" />
+        <Constraint
+            android:id="@+id/headlightsView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewThird"
+            motion:layout_constraintEnd_toStartOf="@+id/backgroundViewFirst"
+            motion:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
+            motion:layout_constraintTop_toTopOf="@+id/backgroundViewThird" />
+        <Constraint
+            android:id="@+id/shockAbsorberView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            motion:layout_constraintTop_toTopOf="@+id/backgroundViewThird"
+            motion:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst" />
     </ConstraintSet>
     <Transition
         android:id="@+id/toEnd"
