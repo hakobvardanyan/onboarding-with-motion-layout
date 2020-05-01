@@ -31,7 +31,7 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/titleViewFirst"
         style="@style/Title"
-        android:text="@string/messaging_title"
+        android:text="@string/title_on_boarding_first_slide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +41,7 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/subTitleViewFirst"
         style="@style/SubTitle"
-        android:text="@string/messaging_description"
+        android:text="@string/description_on_boarding_first_slide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +81,7 @@
         android:alpha="0"
         android:scaleX="0.4"
         android:scaleY="0.4"
-        android:text="@string/chat_title"
+        android:text="@string/title_on_boarding_second_slide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backgroundViewSecond"
@@ -93,7 +93,7 @@
         android:alpha="0"
         android:scaleX="0.4"
         android:scaleY="0.4"
-        android:text="@string/chat_description"
+        android:text="@string/description_on_boarding_second_slide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleViewSecond" />
@@ -131,7 +131,7 @@
         android:alpha="0"
         android:scaleX="0.4"
         android:scaleY="0.4"
-        android:text="@string/chat_title"
+        android:text="@string/title_on_boarding_third_slide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backgroundViewThird"
@@ -143,7 +143,7 @@
         android:alpha="0"
         android:scaleX="0.4"
         android:scaleY="0.4"
-        android:text="@string/chat_description"
+        android:text="@string/description_on_boarding_third_slide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleViewThird" />
