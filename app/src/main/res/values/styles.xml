@@ -37,7 +37,7 @@
         <item name="android:paddingEnd">@dimen/medium_size</item>
         <item name="android:background">@drawable/background_button</item>
         <item name="android:text">@string/title_button</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/colorWhite</item>
     </style>
 
 </resources>

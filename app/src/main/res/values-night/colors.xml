@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="greenLight">#01400D</color>
-    <color name="greenDark">#A5F3B2</color>
-    <color name="orangeLight">#982602</color>
+    <color name="colorWhite">#000000</color>
+    <color name="colorBlack900">#181819</color>
+    <color name="colorBlack">#B3B3B3</color>
+    <color name="teal200">#03DAC5</color>
+    <color name="greenLight">#A5F3B2</color>
+    <color name="greenDark">#008C17</color>
+    <color name="orangeDark">#AC8307</color>
+    <color name="orange">#F6CD50</color>
+    <color name="orangeLight">#E4C598</color>
+    <color name="grey">#838383</color>
+    <color name="greyLight">#BABABA</color>
 </resources>

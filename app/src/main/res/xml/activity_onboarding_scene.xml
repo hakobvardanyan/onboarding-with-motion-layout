@@ -782,22 +782,22 @@
             android:layout_width="@dimen/small_icon_size"
             android:layout_height="@dimen/small_icon_size"
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewThird"
-            motion:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
-            motion:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
+            motion:layout_constraintEnd_toEndOf="@+id/backgroundViewThird"
+            motion:layout_constraintStart_toStartOf="@+id/backgroundViewThird"
             motion:layout_constraintTop_toBottomOf="@+id/backgroundViewThird" />
         <Constraint
             android:id="@+id/headlightsView"
             android:layout_width="@dimen/small_icon_size"
             android:layout_height="@dimen/small_icon_size"
             motion:layout_constraintBottom_toBottomOf="@+id/backgroundViewThird"
-            motion:layout_constraintEnd_toStartOf="@+id/backgroundViewFirst"
-            motion:layout_constraintStart_toStartOf="@+id/backgroundViewFirst"
+            motion:layout_constraintEnd_toStartOf="@+id/backgroundViewThird"
+            motion:layout_constraintStart_toStartOf="@+id/backgroundViewThird"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewThird" />
         <Constraint
             android:id="@+id/shockAbsorberView"
             android:layout_width="@dimen/small_icon_size"
             android:layout_height="@dimen/small_icon_size"
-            motion:layout_constraintEnd_toEndOf="@+id/backgroundViewFirst"
+            motion:layout_constraintEnd_toEndOf="@+id/backgroundViewThird"
             motion:layout_constraintTop_toTopOf="@+id/backgroundViewThird" />
         <Constraint
             android:id="@+id/subTitleViewFirst"
