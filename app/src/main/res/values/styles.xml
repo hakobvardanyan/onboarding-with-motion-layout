@@ -10,9 +10,6 @@
     <style name="Title">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="layout_constrainedWidth">true</item>
-        <item name="android:layout_marginStart">@dimen/larger_size</item>
-        <item name="android:layout_marginEnd">@dimen/larger_size</item>
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center</item>
         <item name="android:maxLines">2</item>
@@ -25,16 +22,22 @@
     <style name="SubTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/small_size</item>
-        <item name="layout_constrainedWidth">true</item>
-        <item name="android:layout_marginStart">@dimen/larger_size</item>
-        <item name="android:layout_marginEnd">@dimen/larger_size</item>
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center</item>
         <item name="android:maxLines">3</item>
         <item name="android:textColor">@color/grey</item>
         <item name="android:textSize">@dimen/sub_title_size</item>
         <item name="autoSizeTextType">uniform</item>
+    </style>
+
+    <style name="ButtonColored" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/medium_size</item>
+        <item name="android:paddingEnd">@dimen/medium_size</item>
+        <item name="android:background">@drawable/background_button</item>
+        <item name="android:text">@string/title_button</item>
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
 </resources>

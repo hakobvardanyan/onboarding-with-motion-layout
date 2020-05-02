@@ -6,4 +6,5 @@
     <string name="description_on_boarding_second_slide">Input VIN code of your car to specify car parts</string>
     <string name="title_on_boarding_third_slide">Make a request</string>
     <string name="description_on_boarding_third_slide">Request an order with the chosen products from the shopping cart</string>
+    <string name="title_button">Get started</string>
 </resources>

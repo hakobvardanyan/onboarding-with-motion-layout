@@ -13,7 +13,7 @@
 
     <!-- text sizes -->
     <dimen name="title_size">28sp</dimen>
-    <dimen name="sub_title_size">18sp</dimen>
+    <dimen name="sub_title_size">16sp</dimen>
 
     <!-- Radius -->
     <dimen name="radius_largest">48dp</dimen>
