@@ -611,6 +611,14 @@
     </Transition>
     <ConstraintSet android:id="@+id/end">
         <Constraint
+            android:id="@+id/backgroundViewFirst"
+            android:layout_width="@dimen/background_view_size"
+            android:layout_height="@dimen/background_view_size"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.15" />
+        <Constraint
             android:id="@+id/indicatorViewFirst"
             android:layout_width="@dimen/common_size"
             android:layout_height="@dimen/small_size"
@@ -637,6 +645,35 @@
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toEndOf="@+id/indicatorViewSecond"
             motion:layout_constraintTop_toTopOf="@+id/indicatorViewSecond" />
+        <Constraint
+            android:id="@+id/carView"
+            android:layout_width="@dimen/main_icon_size"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.35" />
+        <Constraint
+            android:id="@+id/titleViewFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/backgroundViewFirst"
+            motion:layout_constraintVertical_bias="0.7" />
+        <Constraint
+            android:id="@+id/subTitleViewFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/larger_size"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginEnd="@dimen/larger_size"
+            android:alpha="0"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent" />
         <Constraint
             android:id="@+id/backgroundViewSecond"
             android:layout_width="@dimen/background_view_size"
