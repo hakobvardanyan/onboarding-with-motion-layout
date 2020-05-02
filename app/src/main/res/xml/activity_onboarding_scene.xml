@@ -914,6 +914,12 @@
                 motion:percentX="1"
                 motion:percentY="0.13" />
             <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.2"
+                android:scaleY="0.2"
+                motion:framePosition="85"
+                motion:motionTarget="@+id/finishButton" />
+            <KeyAttribute
                 android:alpha="1"
                 android:scaleX="1"
                 android:scaleY="1"
