@@ -1,23 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Spacing -->
-    <dimen name="background_view_size">200dp</dimen>
-    <dimen name="main_icon_size">100dp</dimen>
-    <dimen name="small_icon_size">40dp</dimen>
-    <dimen name="larger_size">32dp</dimen>
-    <dimen name="large_size">24dp</dimen>
-    <dimen name="medium_size">20dp</dimen>
-    <dimen name="common_size">16dp</dimen>
-    <dimen name="small_size">8dp</dimen>
-    <dimen name="tiny_size">4dp</dimen>
+    <!-- Default screen spacings. -->
+    <dimen name="spacing_super_small">0.5dp</dimen>
+    <dimen name="spacing_smallest">1dp</dimen>
+    <dimen name="spacing_small">2dp</dimen>
+    <dimen name="spacing_x_small">4dp</dimen>
+    <dimen name="spacing_xx_small">6dp</dimen>
+    <dimen name="spacing_xxx_small">8dp</dimen>
 
-    <!-- text sizes -->
-    <dimen name="title_size">28sp</dimen>
-    <dimen name="sub_title_size">16sp</dimen>
+    <dimen name="spacing_medium">10dp</dimen>
+    <dimen name="spacing_x_medium">12dp</dimen>
+    <dimen name="spacing_xx_medium">14dp</dimen>
+    <dimen name="spacing_xxx_medium">16dp</dimen>
 
-    <!-- Radius -->
-    <dimen name="radius_largest">48dp</dimen>
-    <dimen name="radius_common">16dp</dimen>
-    <dimen name="radius_medium">12dp</dimen>
-    <dimen name="radius_small">8dp</dimen>
+    <dimen name="spacing_large">18dp</dimen>
+    <dimen name="spacing_x_large">20dp</dimen>
+    <dimen name="spacing_xx_large">24dp</dimen>
+    <dimen name="spacing_xxx_large">48dp</dimen>
+    <dimen name="spacing_xxxx_large">64dp</dimen>
+    <dimen name="spacing_xxxxx_large">72dp</dimen>
+    <dimen name="spacing_xxxxxx_large">128dp</dimen>
+
+    <!-- Default text sizes. -->
+    <dimen name="text_small">8sp</dimen>
+    <dimen name="text_x_small">10sp</dimen>
+    <dimen name="text_xx_small">11sp</dimen>
+    <dimen name="text_xxx_small">12sp</dimen>
+
+    <dimen name="text_medium">13sp</dimen>
+    <dimen name="text_x_medium">14sp</dimen>
+    <dimen name="text_xx_medium">16sp</dimen>
+
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_x_large">20sp</dimen>
+    <dimen name="text_xx_large">24sp</dimen>
+    <dimen name="text_xxx_large">28sp</dimen>
+    <dimen name="text_xxxx_large">34sp</dimen>
+
+    <!--  Default radius sizes.  -->
+    <dimen name="radius_small">4dp</dimen>
+    <dimen name="radius_x_small">6dp</dimen>
+    <dimen name="radius_xx_small">8dp</dimen>
+    <dimen name="radius_medium">10dp</dimen>
+    <dimen name="radius_x_medium">12dp</dimen>
+    <dimen name="radius_xx_medium">14dp</dimen>
+    <dimen name="radius_large">16dp</dimen>
+    <dimen name="radius_x_large">18dp</dimen>
+    <dimen name="radius_xx_large">20dp</dimen>
+
+    <!-- OnBoarding -->
+    <dimen name="onboarding_background_view_size">200dp</dimen>
+    <dimen name="onboarding_main_icon_size">150dp</dimen>
+    <dimen name="onboarding_small_icon_size">40dp</dimen>
+    <dimen name="onboarding_item_horizontal_padding">32dp</dimen>
+    <dimen name="onboarding_title_top_margin">40dp</dimen>
+    <dimen name="onboarding_sub_title_top_margin">50dp</dimen>
+    <dimen name="onboarding_radius_largest">48dp</dimen>
+    <dimen name="onboarding_button_height">50dp</dimen>
+    <dimen name="onboarding_button_top_margin">60dp</dimen>
 </resources>

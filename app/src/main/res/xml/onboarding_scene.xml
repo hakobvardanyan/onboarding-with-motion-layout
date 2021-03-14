@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/title_view_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/car_view"
+            motion:layout_constraintVertical_bias="0.1" />
+        <Constraint
+            android:id="@+id/subtitle_view_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/title_view_first"
+            motion:layout_constraintVertical_bias="0.2" />
+        <Constraint
+            android:id="@+id/car_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.25"
+            motion:layout_constraintWidth_percent="0.4" />
+        <Constraint
+            android:id="@+id/subtitle_view_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            android:alpha="0"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/subtitle_view_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            android:alpha="0"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/title_view_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            android:alpha="0"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/car_vin_code_view"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/title_view_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/order_box_view"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/car_vin_code_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:rotation="360"
+            android:scaleX="0.3"
+            android:scaleY="0.3"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.35"
+            motion:layout_constraintWidth_percent="0.4" />
+        <Constraint
+            android:id="@+id/order_box_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:rotation="180"
+            android:scaleX="0.3"
+            android:scaleY="0.3"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.35"
+            motion:layout_constraintWidth_percent="0.4" />
+        <Constraint
+            android:id="@+id/indicator_view_first"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_xxx_medium"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="@+id/indicator_view_second"
+            motion:layout_constraintHorizontal_chainStyle="packed"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/indicator_view_second"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            android:layout_marginStart="@dimen/spacing_xxx_medium"
+            android:layout_marginEnd="@dimen/spacing_xxx_medium"
+            motion:layout_constraintBottom_toBottomOf="@+id/indicator_view_first"
+            motion:layout_constraintEnd_toStartOf="@+id/indicator_view_third"
+            motion:layout_constraintStart_toEndOf="@+id/indicator_view_first"
+            motion:layout_constraintTop_toTopOf="@+id/indicator_view_first" />
+        <Constraint
+            android:id="@+id/indicator_view_third"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            motion:layout_constraintBottom_toBottomOf="@+id/indicator_view_second"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/indicator_view_second"
+            motion:layout_constraintTop_toTopOf="@+id/indicator_view_second" />
+        <Constraint
+            android:id="@+id/indicator_view_active"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            motion:layout_constraintBottom_toBottomOf="@+id/indicator_view_first"
+            motion:layout_constraintEnd_toEndOf="@+id/indicator_view_first"
+            motion:layout_constraintStart_toStartOf="@+id/indicator_view_first"
+            motion:layout_constraintTop_toTopOf="@+id/indicator_view_first" />
+        <Constraint
+            android:id="@+id/button_get_started"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/onboarding_button_height"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            android:alpha="0"
+            android:scaleX="0.2"
+            android:scaleY="0.2"
+            motion:layout_constraintBottom_toTopOf="@id/indicator_view_first"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/subtitle_view_third"
+            motion:layout_constraintVertical_bias="0" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/left">
+        <Constraint
+            android:id="@+id/indicator_view_first"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_xxx_medium"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="@+id/indicator_view_second"
+            motion:layout_constraintHorizontal_chainStyle="packed"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/button_get_started"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/onboarding_button_height"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            android:alpha="0"
+            android:scaleX="0.2"
+            android:scaleY="0.2"
+            motion:layout_constraintBottom_toTopOf="@id/indicator_view_first"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/subtitle_view_third"
+            motion:layout_constraintVertical_bias="0" />
+        <Constraint
+            android:id="@+id/indicator_view_second"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            android:layout_marginStart="@dimen/spacing_xxx_medium"
+            android:layout_marginEnd="@dimen/spacing_xxx_medium"
+            motion:layout_constraintBottom_toBottomOf="@+id/indicator_view_first"
+            motion:layout_constraintEnd_toStartOf="@+id/indicator_view_third"
+            motion:layout_constraintStart_toEndOf="@+id/indicator_view_first"
+            motion:layout_constraintTop_toTopOf="@+id/indicator_view_first" />
+        <Constraint
+            android:id="@+id/indicator_view_third"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            motion:layout_constraintBottom_toBottomOf="@+id/indicator_view_second"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/indicator_view_second"
+            motion:layout_constraintTop_toTopOf="@+id/indicator_view_second" />
+        <Constraint
+            android:id="@+id/title_view_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/order_box_view"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/order_box_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:rotation="180"
+            android:scaleX="0.3"
+            android:scaleY="0.3"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.35"
+            motion:layout_constraintWidth_percent="0.4" />
+        <Constraint
+            android:id="@+id/car_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.35"
+            motion:layout_constraintWidth_percent="0.4" />
+        <Constraint
+            android:id="@+id/title_view_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/car_view"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/subtitle_view_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            android:alpha="0"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/car_vin_code_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.25"
+            motion:layout_constraintWidth_percent="0.4" />
+        <Constraint
+            android:id="@+id/title_view_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/car_vin_code_view"
+            motion:layout_constraintVertical_bias="0.1" />
+        <Constraint
+            android:id="@+id/subtitle_view_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/title_view_second"
+            motion:layout_constraintVertical_bias="0.2" />
+        <Constraint
+            android:id="@+id/indicator_view_active"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            motion:layout_constraintBottom_toBottomOf="@+id/indicator_view_second"
+            motion:layout_constraintEnd_toEndOf="@+id/indicator_view_second"
+            motion:layout_constraintStart_toStartOf="@+id/indicator_view_second"
+            motion:layout_constraintTop_toTopOf="@+id/indicator_view_second" />
+        <Constraint
+            android:id="@+id/subtitle_view_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            android:alpha="0"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent" />
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/toLeft"
+        motion:constraintSetEnd="@+id/left"
+        motion:constraintSetStart="@+id/start">
+        <OnSwipe
+            motion:dragDirection="dragLeft"
+            motion:touchAnchorSide="left" />
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                android:rotation="360"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/car_view" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/title_view_first" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/subtitle_view_first" />
+            <KeyAttribute
+                android:alpha="1"
+                android:rotation="0"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/car_vin_code_view" />
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/title_view_second" />
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/subtitle_view_second" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/subtitle_view_second" />
+            <KeyAttribute
+                android:scaleX="3"
+                android:scaleY="1"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/indicator_view_active" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/indicator_view_first"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_xxx_medium"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="@+id/indicator_view_second"
+            motion:layout_constraintHorizontal_chainStyle="packed"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/indicator_view_second"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            android:layout_marginStart="@dimen/spacing_xxx_medium"
+            android:layout_marginEnd="@dimen/spacing_xxx_medium"
+            motion:layout_constraintBottom_toBottomOf="@+id/indicator_view_first"
+            motion:layout_constraintEnd_toStartOf="@+id/indicator_view_third"
+            motion:layout_constraintStart_toEndOf="@+id/indicator_view_first"
+            motion:layout_constraintTop_toTopOf="@+id/indicator_view_first" />
+        <Constraint
+            android:id="@+id/indicator_view_third"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            motion:layout_constraintBottom_toBottomOf="@+id/indicator_view_second"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/indicator_view_second"
+            motion:layout_constraintTop_toTopOf="@+id/indicator_view_second" />
+        <Constraint
+            android:id="@+id/car_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.15"
+            motion:layout_constraintWidth_percent="0.4" />
+        <Constraint
+            android:id="@+id/title_view_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/car_view"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/subtitle_view_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            android:alpha="0"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/order_box_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.25"
+            motion:layout_constraintWidth_percent="0.4" />
+        <Constraint
+            android:id="@+id/car_vin_code_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintDimensionRatio="1:1"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.35"
+            motion:layout_constraintWidth_percent="0.4" />
+        <Constraint
+            android:id="@+id/title_view_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/order_box_view"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/subtitle_view_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            android:alpha="0"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/title_view_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/order_box_view"
+            motion:layout_constraintVertical_bias="0.1" />
+        <Constraint
+            android:id="@+id/subtitle_view_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            motion:layout_constrainedWidth="true"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/title_view_third"
+            motion:layout_constraintVertical_bias="0.2" />
+        <Constraint
+            android:id="@+id/indicator_view_active"
+            android:layout_width="@dimen/spacing_medium"
+            android:layout_height="@dimen/spacing_medium"
+            motion:layout_constraintBottom_toBottomOf="@+id/indicator_view_third"
+            motion:layout_constraintEnd_toEndOf="@+id/indicator_view_third"
+            motion:layout_constraintStart_toStartOf="@+id/indicator_view_third"
+            motion:layout_constraintTop_toTopOf="@+id/indicator_view_third" />
+        <Constraint
+            android:id="@+id/button_get_started"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/onboarding_button_height"
+            android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+            android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+            motion:layout_constraintBottom_toTopOf="@id/indicator_view_first"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/subtitle_view_third" />
+        <Constraint
+            android:id="@+id/subtitle_view_first"
+            motion:layout_constraintTop_toBottomOf="parent" />
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/toEnd"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/left">
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/title_view_second" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/subtitle_view_second" />
+            <KeyAttribute
+                android:alpha="0"
+                android:rotation="360"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/car_vin_code_view" />
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/title_view_third" />
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/subtitle_view_third" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.4"
+                android:scaleY="0.4"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/subtitle_view_third" />
+            <KeyAttribute
+                android:scaleX="3"
+                android:scaleY="1"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/indicator_view_active" />
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.2"
+                android:scaleY="0.2"
+                motion:framePosition="85"
+                motion:motionTarget="@+id/button_get_started" />
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/button_get_started" />
+        </KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragLeft"
+            motion:touchAnchorSide="left" />
+    </Transition>
+</MotionScene>

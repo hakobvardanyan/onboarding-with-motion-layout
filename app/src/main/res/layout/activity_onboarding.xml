@@ -1,129 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_onboarding_scene"
-    app:showPaths="false"
-    tools:context=".OnBoardingActivity">
-
-    <View
-        android:id="@+id/backgroundViewFirst"
-        android:layout_width="@dimen/background_view_size"
-        android:layout_height="@dimen/background_view_size"
-        android:background="@drawable/background_black_rounded" />
+    android:background="@color/colorPrimary"
+    app:layoutDescription="@xml/onboarding_scene">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/carView"
-        android:layout_width="@dimen/main_icon_size"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_car_service" />
+        android:id="@+id/car_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_car_service"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.4" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/titleViewFirst"
-        style="@style/Title"
+        android:id="@+id/title_view_first"
+        style="@style/OnBoardingTitle"
         android:text="@string/title_on_boarding_first_slide" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/subTitleViewFirst"
-        style="@style/SubTitle"
+        android:id="@+id/subtitle_view_first"
+        style="@style/OnBoardingSubTitle"
         android:text="@string/description_on_boarding_first_slide" />
 
-    <View
-        android:id="@+id/backgroundViewSecond"
-        android:layout_width="@dimen/background_view_size"
-        android:layout_height="@dimen/background_view_size"
-        android:background="@drawable/background_black_rounded" />
-
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/carVinCodeView"
-        android:layout_width="@dimen/main_icon_size"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_car_in_magnifier" />
+        android:id="@+id/car_vin_code_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_car_in_magnifier"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.4" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/titleViewSecond"
-        style="@style/Title"
+        android:id="@+id/title_view_second"
+        style="@style/OnBoardingTitle"
         android:text="@string/title_on_boarding_second_slide" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/subTitleViewSecond"
-        style="@style/SubTitle"
+        android:id="@+id/subtitle_view_second"
+        style="@style/OnBoardingSubTitle"
         android:text="@string/description_on_boarding_second_slide" />
 
-    <View
-        android:id="@+id/backgroundViewThird"
-        android:layout_width="@dimen/background_view_size"
-        android:layout_height="@dimen/background_view_size"
-        android:background="@drawable/background_black_rounded" />
-
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/orderBoxView"
-        android:layout_width="@dimen/main_icon_size"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_order_box" />
+        android:id="@+id/order_box_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_order_box"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.4" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/titleViewThird"
-        style="@style/Title"
+        android:id="@+id/title_view_third"
+        style="@style/OnBoardingTitle"
         android:text="@string/title_on_boarding_third_slide" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/subTitleViewThird"
-        style="@style/SubTitle"
+        android:id="@+id/subtitle_view_third"
+        style="@style/OnBoardingSubTitle"
         android:text="@string/description_on_boarding_third_slide" />
 
     <View
-        android:id="@+id/indicatorViewFirst"
-        android:layout_width="@dimen/common_size"
-        android:layout_height="@dimen/small_size"
+        android:id="@+id/indicator_view_first"
+        android:layout_width="@dimen/spacing_medium"
+        android:layout_height="@dimen/spacing_medium"
         android:background="@drawable/background_indicator_disabled" />
 
     <View
-        android:id="@+id/indicatorViewSecond"
-        android:layout_width="@dimen/common_size"
-        android:layout_height="@dimen/small_size"
+        android:id="@+id/indicator_view_second"
+        android:layout_width="@dimen/spacing_medium"
+        android:layout_height="@dimen/spacing_medium"
         android:background="@drawable/background_indicator_disabled" />
 
     <View
-        android:id="@+id/indicatorViewThird"
-        android:layout_width="@dimen/common_size"
-        android:layout_height="@dimen/small_size"
+        android:id="@+id/indicator_view_third"
+        android:layout_width="@dimen/spacing_medium"
+        android:layout_height="@dimen/spacing_medium"
         android:background="@drawable/background_indicator_disabled" />
 
     <View
-        android:id="@+id/indicatorViewActiveTop"
-        android:layout_width="@dimen/common_size"
-        android:layout_height="@dimen/tiny_size"
-        android:background="@drawable/background_indicator_enabled_top" />
+        android:id="@+id/indicator_view_active"
+        android:layout_width="@dimen/spacing_medium"
+        android:layout_height="@dimen/spacing_medium"
+        android:background="@drawable/background_indicator_enabled" />
 
-    <View
-        android:id="@+id/indicatorViewActiveBottom"
-        android:layout_width="@dimen/common_size"
-        android:layout_height="@dimen/tiny_size"
-        android:background="@drawable/background_indicator_enabled_bottom" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/finishButton"
-        style="@style/ButtonColored" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/diskView"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:src="@drawable/ic_car_part_disk" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/shockAbsorberView"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:src="@drawable/ic_car_part_shock_absorber" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/headlightsView"
-        android:layout_width="@dimen/small_icon_size"
-        android:layout_height="@dimen/small_icon_size"
-        android:src="@drawable/ic_car_part_headlights" />
-
+        android:id="@+id/button_get_started"
+        android:text="@string/title_button_get_started"
+        style="@style/OnBoarding.Button" />
 </androidx.constraintlayout.motion.widget.MotionLayout>
