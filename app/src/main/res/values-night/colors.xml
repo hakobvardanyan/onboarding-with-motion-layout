@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorWhite">#000000</color>
-    <color name="colorBlack900">#181819</color>
-    <color name="colorBlack">#B3B3B3</color>
-    <color name="teal200">#03DAC5</color>
-    <color name="greenLight">#A5F3B2</color>
-    <color name="greenDark">#008C17</color>
-    <color name="orangeDark">#AC8307</color>
-    <color name="orange">#F6CD50</color>
-    <color name="orangeLight">#E4C598</color>
-    <color name="grey">#838383</color>
-    <color name="greyLight">#BABABA</color>
+    <color name="colorPrimary">#002626</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#95C623</color>
+    <color name="colorGreenDarker">#E6E7E8</color>
+    <color name="colorAccentAlpha_10">#1A95C623</color>
+    <color name="colorGreenDarkerAlpha_10">#1A002626</color>
 </resources>
