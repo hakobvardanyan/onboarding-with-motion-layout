@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,9 +11,7 @@
         android:id="@+id/car_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/ic_car_service"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintWidth_percent="0.4" />
+        android:src="@drawable/ic_car_service" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title_view_first"
@@ -28,9 +27,7 @@
         android:id="@+id/car_vin_code_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/ic_car_in_magnifier"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintWidth_percent="0.4" />
+        android:src="@drawable/ic_car_in_magnifier" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title_view_second"
@@ -46,9 +43,7 @@
         android:id="@+id/order_box_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/ic_order_box"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintWidth_percent="0.4" />
+        android:src="@drawable/ic_order_box"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title_view_third"
@@ -83,7 +78,6 @@
         android:layout_width="@dimen/spacing_medium"
         android:layout_height="@dimen/spacing_medium"
         android:background="@drawable/background_indicator_enabled" />
-
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_get_started"

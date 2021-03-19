@@ -571,9 +571,9 @@
                 motion:framePosition="50"
                 motion:motionTarget="@+id/subtitle_view_third" />
             <KeyAttribute
+                android:alpha="0.2"
                 android:scaleX="0.5"
                 android:scaleY="0.5"
-                android:alpha="0.2"
                 motion:framePosition="50"
                 motion:motionTarget="@+id/indicator_view_active" />
             <KeyAttribute
