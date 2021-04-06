@@ -2,7 +2,7 @@
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
-    <ConstraintSet android:id="@+id/start">
+    <ConstraintSet android:id="@+id/initial">
         <Constraint android:id="@+id/car_view">
             <Layout
                 motion:layout_constraintBottom_toBottomOf="parent"
@@ -12,6 +12,11 @@
                 motion:layout_constraintTop_toTopOf="parent"
                 motion:layout_constraintVertical_bias="0.25"
                 motion:layout_constraintWidth_percent="0.4" />
+            <PropertySet android:alpha="1" />
+            <Transform
+                android:rotation="1"
+                android:scaleX="1"
+                android:scaleY="1" />
         </Constraint>
         <Constraint android:id="@+id/title_view_first">
             <Layout
@@ -185,8 +190,8 @@
         </Constraint>
     </ConstraintSet>
     <ConstraintSet
-        android:id="@+id/left"
-        motion:deriveConstraintsFrom="@+id/start">
+        android:id="@+id/middle"
+        motion:deriveConstraintsFrom="@+id/initial">
         <Constraint android:id="@+id/car_view">
             <Layout
                 motion:layout_constraintBottom_toBottomOf="parent"
@@ -196,6 +201,11 @@
                 motion:layout_constraintTop_toTopOf="parent"
                 motion:layout_constraintVertical_bias="0.35"
                 motion:layout_constraintWidth_percent="0.4" />
+            <PropertySet android:alpha="0" />
+            <Transform
+                android:rotation="360"
+                android:scaleX="0.3"
+                android:scaleY="0.3" />
         </Constraint>
         <Constraint android:id="@+id/title_view_first">
             <Layout
@@ -279,7 +289,7 @@
     </ConstraintSet>
     <ConstraintSet
         android:id="@+id/end"
-        motion:deriveConstraintsFrom="@+id/left">
+        motion:deriveConstraintsFrom="@+id/middle">
         <Constraint android:id="@+id/order_box_view">
             <Layout
                 motion:layout_constraintBottom_toBottomOf="parent"
@@ -398,8 +408,8 @@
     </ConstraintSet>
     <Transition
         android:id="@+id/toLeft"
-        motion:constraintSetEnd="@+id/left"
-        motion:constraintSetStart="@+id/start">
+        motion:constraintSetEnd="@+id/middle"
+        motion:constraintSetStart="@+id/initial">
         <OnSwipe
             motion:dragDirection="dragLeft"
             motion:touchAnchorSide="left" />
@@ -459,7 +469,7 @@
     <Transition
         android:id="@+id/toEnd"
         motion:constraintSetEnd="@+id/end"
-        motion:constraintSetStart="@+id/left">
+        motion:constraintSetStart="@+id/middle">
         <KeyFrameSet>
             <KeyAttribute
                 android:alpha="0"
