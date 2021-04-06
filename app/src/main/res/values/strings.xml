@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OnBoarding With MotionLayout</string>
+    <string name="app_name">OnBoarding</string>
 
     <!-- OnBoarding -->
     <string name="title_on_boarding_first_slide">Welcome</string>

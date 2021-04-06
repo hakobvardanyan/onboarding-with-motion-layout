@@ -3,6 +3,16 @@
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/car_view">
+            <Layout
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintDimensionRatio="1:1"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintVertical_bias="0.25"
+                motion:layout_constraintWidth_percent="0.4" />
+        </Constraint>
         <Constraint android:id="@+id/title_view_first">
             <Layout
                 android:layout_width="wrap_content"
@@ -28,15 +38,35 @@
                 motion:layout_constraintTop_toBottomOf="@+id/title_view_first"
                 motion:layout_constraintVertical_bias="0.2" />
         </Constraint>
-        <Constraint android:id="@+id/car_view">
+        <Constraint android:id="@+id/car_vin_code_view">
             <Layout
                 motion:layout_constraintBottom_toBottomOf="parent"
                 motion:layout_constraintDimensionRatio="1:1"
+                motion:layout_constraintStart_toEndOf="parent"
                 motion:layout_constraintEnd_toEndOf="parent"
-                motion:layout_constraintStart_toStartOf="parent"
                 motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintVertical_bias="0.25"
+                motion:layout_constraintVertical_bias="0.35"
                 motion:layout_constraintWidth_percent="0.4" />
+            <PropertySet android:alpha="0" />
+            <Transform
+                android:rotation="360"
+                android:scaleX="0.3"
+                android:scaleY="0.3" />
+        </Constraint>
+        <Constraint android:id="@+id/title_view_second">
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+                android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintStart_toEndOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/car_vin_code_view"
+                motion:layout_constraintVertical_bias="0.3" />
+            <PropertySet android:alpha="0" />
+            <Transform
+                android:scaleX="0.4"
+                android:scaleY="0.4" />
         </Constraint>
         <Constraint android:id="@+id/subtitle_view_second">
             <Layout
@@ -48,6 +78,36 @@
                 motion:layout_constraintEnd_toEndOf="parent"
                 motion:layout_constraintStart_toStartOf="parent"
                 motion:layout_constraintTop_toBottomOf="parent" />
+            <PropertySet android:alpha="0" />
+            <Transform
+                android:scaleX="0.4"
+                android:scaleY="0.4" />
+        </Constraint>
+        <Constraint android:id="@+id/order_box_view">
+            <Layout
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintDimensionRatio="1:1"
+                motion:layout_constraintStart_toEndOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintVertical_bias="0.35"
+                motion:layout_constraintWidth_percent="0.4" />
+            <PropertySet android:alpha="0" />
+            <Transform
+                android:rotation="180"
+                android:scaleX="0.3"
+                android:scaleY="0.3" />
+        </Constraint>
+        <Constraint android:id="@+id/title_view_third">
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+                android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintStart_toEndOf="parent"
+                motion:layout_constraintTop_toBottomOf="@+id/order_box_view"
+                motion:layout_constraintVertical_bias="0.3" />
             <PropertySet android:alpha="0" />
             <Transform
                 android:scaleX="0.4"
@@ -67,64 +127,6 @@
             <Transform
                 android:scaleX="0.4"
                 android:scaleY="0.4" />
-        </Constraint>
-        <Constraint android:id="@+id/title_view_second">
-            <Layout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
-                android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintStart_toEndOf="parent"
-                motion:layout_constraintTop_toBottomOf="@+id/car_vin_code_view"
-                motion:layout_constraintVertical_bias="0.3" />
-            <PropertySet android:alpha="0" />
-            <Transform
-                android:scaleX="0.4"
-                android:scaleY="0.4" />
-        </Constraint>
-        <Constraint android:id="@+id/title_view_third">
-            <Layout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
-                android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintStart_toEndOf="parent"
-                motion:layout_constraintTop_toBottomOf="@+id/order_box_view"
-                motion:layout_constraintVertical_bias="0.3" />
-            <PropertySet android:alpha="0" />
-            <Transform
-                android:scaleX="0.4"
-                android:scaleY="0.4" />
-        </Constraint>
-        <Constraint android:id="@+id/car_vin_code_view">
-            <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintDimensionRatio="1:1"
-                motion:layout_constraintStart_toEndOf="parent"
-                motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintVertical_bias="0.35"
-                motion:layout_constraintWidth_percent="0.4" />
-            <PropertySet android:alpha="0" />
-            <Transform
-                android:rotation="360"
-                android:scaleX="0.3"
-                android:scaleY="0.3" />
-        </Constraint>
-        <Constraint android:id="@+id/order_box_view">
-            <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintDimensionRatio="1:1"
-                motion:layout_constraintStart_toEndOf="parent"
-                motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintVertical_bias="0.35"
-                motion:layout_constraintWidth_percent="0.4" />
-            <PropertySet android:alpha="0" />
-            <Transform
-                android:rotation="180"
-                android:scaleX="0.3"
-                android:scaleY="0.3" />
         </Constraint>
         <Constraint android:id="@+id/indicator_view_first">
             <Layout
@@ -204,7 +206,7 @@
                 motion:layout_constraintBottom_toBottomOf="parent"
                 motion:layout_constraintEnd_toStartOf="parent"
                 motion:layout_constraintTop_toBottomOf="@+id/car_view"
-                motion:layout_constraintVertical_bias="0.1" />
+                motion:layout_constraintVertical_bias="0.3" />
         </Constraint>
         <Constraint android:id="@+id/subtitle_view_first">
             <Layout
@@ -298,6 +300,7 @@
                 motion:layout_constraintBottom_toBottomOf="parent"
                 motion:layout_constraintDimensionRatio="1:1"
                 motion:layout_constraintEnd_toStartOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
                 motion:layout_constraintTop_toTopOf="parent"
                 motion:layout_constraintVertical_bias="0.35"
                 motion:layout_constraintWidth_percent="0.4" />
@@ -311,9 +314,11 @@
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/onboarding_item_horizontal_padding"
+                android:layout_marginEnd="@dimen/onboarding_item_horizontal_padding"
                 motion:layout_constraintBottom_toBottomOf="parent"
                 motion:layout_constraintEnd_toStartOf="parent"
-                motion:layout_constraintTop_toBottomOf="@+id/order_box_view"
+                motion:layout_constraintTop_toBottomOf="@+id/car_vin_code_view"
                 motion:layout_constraintVertical_bias="0.3" />
             <PropertySet android:alpha="0" />
             <Transform
